@@ -14,7 +14,7 @@ echo "\033[1;92m      __  __          _____
      | | _  |
      |_ _ | \_____/\n";
 echo "\033[1;96m[1] SetUp\n";
-echo "\033[1;932m[2] Run server\n"; /// Link Key Đã tạo ở link1s.com
+echo "\033[1;932m[2] Run server\n"; /// Link Key Đã tạo ở shrtfly.com
 echo "\033[1;92mLua chon: \033[1;33m";
       $luachon = trim(fgets(STDIN));
     if ($luachon == 1)  {
@@ -29,9 +29,9 @@ system('clear');
     } else if ($luachon == 2)  {
     sleep(1);
         while (true){
-$checkkey  = file('https://pastebin.com/raw/NdpZSWzh'); //// Linh Key
+$checkkey  = file('https://note1s.net/note/CaHCjA812x7u'); //// Linh Key
 echo "\033[1;96mLưu Ý Khi nào sai key thì vào link lấy lại\n";
-echo "\033[1;93mLink lấy key:\033[1;91m https://link1s.com/KeyFree\n"; /// Link Key Đã tạo ở link1s.com
+echo "\033[1;93mLink lấy key:\033[1;91m https://stfly.xyz/6m1MG\n"; /// Link Key Đã tạo ở shrtfly.com
 echo "\033[1;92mNhập Key Để Chạy Server: \033[1;33m";
       $makey = trim(fgets(STDIN));
     if ($makey == $checkkey[0])  {
