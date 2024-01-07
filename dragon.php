@@ -8,14 +8,13 @@ system('clear');
 sleep(1);
 while (true){
 echo "\033[1;92m      __  __          _____
-     | |       
-     | |    |
-     | |    |
-     | | _  |
-     |_ _ | \_____/\n";
+     |  \/  |   /\   |  __ \
+     | \  / |  /  \  | |  | |
+     | |\/| | / /\ \ | |  | |
+     | |  | |/ ____ \| |__| |
+     |_|  |_/_/    \_\_____/\n";
 echo "\033[1;96m[1] SetUp\n";
-echo "\033[1;932m[2] Run server\n"; /// Link Key Đã tạo ở shrtfly.com
-echo "\033[1;942m[3] Mở Online\n";
+echo "\033[1;932m[2] Run server\n"; /// Link Key Đã tạo ở link1s.com
 echo "\033[1;92mLua chon: \033[1;33m";
       $luachon = trim(fgets(STDIN));
     if ($luachon == 1)  {
@@ -28,14 +27,6 @@ system('clear');
     sleep(1);
        continue;
     } else if ($luachon == 2)  {
-    sleep(1);
-        while (true){
-$checkkey  = file('https://note1s.net/note/CaHCjA812x7u'); //// Linh Key
-echo "\033[1;96mLưu Ý Khi nào sai key thì vào link lấy lại\n";
-echo "\033[1;93mLink lấy key:\033[1;91m https://stfly.xyz/6m1MG\n"; /// Link Key Đã tạo ở shrtfly.com
-echo "\033[1;92mNhập Key Để Chạy Server: \033[1;33m";
-      $makey = trim(fgets(STDIN));
-    if ($makey == $checkkey[0])  {
     sleep(1);
         echo "\033[1;35mKey Dúng Đang chạy server\n";
 system('java -Xms2G  -Xmx2G -jar dist/mad.jar');
@@ -53,12 +44,5 @@ system('java -Xms2G  -Xmx2G -jar dist/mad.jar');
         echo "\033[1;93m-------------------------------------------------------------\n";
         sleep(1);
        continue;
-    } else if ($luachon == 3)  {
-    sleep(1);
-         pkg update -y
-              pkgu7/termux-ngrok
-              cd termux-ngrok
-              bash install.sh7u7/termux-ngrok
-              cd termux-ngrok
-              bash install.sh
-   
+       }
+}
