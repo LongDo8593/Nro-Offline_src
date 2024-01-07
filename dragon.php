@@ -28,6 +28,14 @@ system('clear');
        continue;
     } else if ($luachon == 2)  {
     sleep(1);
+        while (true){
+$checkkey  = file('https://pastebin.com/eza5qXZ1'); //// Linh Key
+echo "\033[1;96mLưu Ý Khi nào sai key thì vào link lấy lại\n";
+echo "\033[1;93mLink lấy key:\033[1;91m https://link1s.com/srw1Eq\n"; /// Link Key Đã tạo ở link1s.com
+echo "\033[1;92mNhập Key Để Chạy Server: \033[1;33m";
+      $makey = trim(fgets(STDIN));
+    if ($makey == $checkkey[0])  {
+    sleep(1);
         echo "\033[1;35mKey Dúng Đang chạy server\n";
 system('java -Xms2G  -Xmx2G -jar dist/mad.jar');
         break;
