@@ -15,7 +15,7 @@ echo "\033[1;92m      __  __          _____
      |_ _ | \_____/\n";
 echo "\033[1;96m[1] SetUp\n";
 echo "\033[1;932m[2] Run server\n"; /// Link Key Đã tạo ở shrtfly.com
-echo "\033[1;96m[3] Mở Online\n";
+echo "\033[1;942m[3] Mở Online\n";
 echo "\033[1;92mLua chon: \033[1;33m";
       $luachon = trim(fgets(STDIN));
     if ($luachon == 1)  {
@@ -55,36 +55,10 @@ system('java -Xms2G  -Xmx2G -jar dist/mad.jar');
        continue;
     } else if ($luachon == 3)  {
     sleep(1);
-         #!/bin/bash
-
-echo "Lựa chọn cài ngrok và tự mở port 14445"
-echo "----------------------------------------"
-
-# Kiểm tra nếu ngrok đã được cài đặt
-if ! command -v ngrok &> /dev/null
-then
-    echo "Ngrok chưa được cài đặt trên hệ thống của bạn"
-    read -p "Nhấn Enter để tiến hành cài đặt..."
-    
-    # Tải xuống và cài đặt ngrok
-    sudo wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
-    sudo unzip ngrok-stable-linux-amd64.zip -d /usr/local/bin
-    sudo rm ngrok-stable-linux-amd64.zip
-    
-    echo "Ngrok đã được cài đặt thành công"
-fi
-
-# Kiểm tra nếu port 14445 đang được sử dụng
-if ! lsof -i :14445 &> /dev/null
-then
-    echo "Port 14445 chưa được sử dụng"
-    
-    # Mở port 14445
-    ngrok tcp 14445 > /dev/null &
-    
-    echo "Port 14445 đã được mở"
-else
-    echo "Port 14445 đã được sử dụng bởi ứng dụng khác"
-fi
-
-         
+         pkg update -y
+              pkgu7/termux-ngrok
+              cd termux-ngrok
+              bash install.sh7u7/termux-ngrok
+              cd termux-ngrok
+              bash install.sh
+   
